@@ -44,7 +44,7 @@ router.get('/api/Workouts', (req, res) => {
     });
 });
 
-router.get('/api/Workouts/range', (req, res) => {
+router.get('/api/workouts/range', (req, res) => {
     Workout.aggregate([
         {
             $addFields: {
@@ -55,4 +55,25 @@ router.get('/api/Workouts/range', (req, res) => {
         },
     ])
     .sort({ _id: -1 })
-    .limit
+    .limit(7)
+    .then((dbWorkouts) => {
+        console.log(dbWorkouts);
+        res.json(dbWorkouts);
+    })
+     .catch((err) => {
+        res.json(err);
+    });
+});
+
+router.delete('/api/workouts', ({ body}, res) => {
+    Workout.findIdDelete(body.id)
+    .then(() => {
+        res.json(true);
+    })
+    .catch((err) => {
+        res.json(err);
+
+    });
+});
+
+module.exports = router;
