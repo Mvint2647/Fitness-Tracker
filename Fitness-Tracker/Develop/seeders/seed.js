@@ -125,7 +125,7 @@ const workoutSeed = [
   },
 ];
 
-db.Workout.deleteMany({})
+db.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
   .then((data) => {
     console.log(data.result.n + ' records inserted!');
