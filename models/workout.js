@@ -5,13 +5,12 @@ const workoutSchema = new Schema({
   
       day: {
         type: Date,
-        default: Date.now,
+        default: () => new Date(),
       },
       exercises:[
         {
         type:{
-                type: String,
-                enterNum: ["resistance", "cardio"],
+            type: String,
                 trim: true,
                 required: 'Please type a type of Exercise',
             },
@@ -22,11 +21,10 @@ const workoutSchema = new Schema({
             },
             weight: {
                 type: Number,
-
-           
             },
             durration: {
                 type: Number,
+                required: 'Please enter an exercise duration in mins'
             },
             reps: {
                 type: Number,
