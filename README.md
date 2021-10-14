@@ -39,7 +39,7 @@ For this assignment, the app is a fitness tracker.  The fitness tracker allows t
 4. Enter the details of your exercise and click **Complete** to complete the workout or **Add Exercise** continue to add other exercises
 5. Click the **Dashboard** on the top navigation bar to see stats.
 
-A demo of the application is available at: https://" "herokuapp.com/
+A demo of the application is available at: https://frozen-atoll-30244.herokuapp.com/?id=6168b60b0ad1a20017cdc799
 
 ## Features
 * Add a workout
