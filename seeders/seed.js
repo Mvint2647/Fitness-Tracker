@@ -3,7 +3,7 @@ let mongoose = require("mongoose");
 let db = require("../models");
 
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect("mongodb+srv://root:Password123@cluster0.8culs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
