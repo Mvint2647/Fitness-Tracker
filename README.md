@@ -56,19 +56,11 @@ Pull requests are welcome
 ## Screenshots
 **Home Page**
 
-![home]()
-
-**New Workout**
-
-![newworkout]()
-
-**Add Exercise**
-
-![addexercise]()
+![home](ss50.png)
 
 **Stats**
 
-![stats]()
+![stats](ss51.png)
 
 ## Questions
 Checkout my GitHub [profile](https://github.com/mvint2647)
